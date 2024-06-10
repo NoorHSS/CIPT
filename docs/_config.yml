@@ -1,6 +1,9 @@
+baseurl: "/CIPT"
+url: "https://nawrashaswia.github.io"
+
 theme: jekyll-theme-slate
 # Custom CSS
 markdown: kramdown
 kramdown:
   input: GFM 
-  baseurl: "/CIPT"
+
