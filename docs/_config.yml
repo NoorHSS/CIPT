@@ -2,4 +2,5 @@ theme: jekyll-theme-slate
 # Custom CSS
 markdown: kramdown
 kramdown:
-  input: GFM
+  input: GFM 
+  baseurl: "/CIPT"
