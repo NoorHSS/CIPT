@@ -310,7 +310,7 @@ p {
 .block.blue { background-color: #007bff; color: #fff; }
 .block.red { background-color: #dc3545; color: #fff; }
 .block.green { background-color: #28a745; color: #fff; }
-.block.yellow { background-color: #ffc107; color: #333; }
+.block.yellow { background-color: #BBBBBB; color: #333; }
 .block.orange { background-color: #fd7e14; color: #fff; }
 
 .block .btn {
