@@ -311,11 +311,11 @@ p {
     color: #fff; /* Make font white for all boxes */
 }
 
-.block.blue { background-color: #007bff; }
-.block.red { background-color: #dc3545; }
-.block.green { background-color: #28a745; }
-.block.yellow { background-color: #ffc107; color: #fff; } /* Ensure font color is white for yellow box */
-.block.orange { background-color: #fd7e14; }
+.block.blue { background-color: #0063CD; }
+.block.red { background-color: #CB0518; }
+.block.green { background-color: #018B20; }
+.block.yellow { background-color: #D5A000; color: #fff; } /* Ensure font color is white for yellow box */
+.block.orange { background-color: #C96008; }
 
 .block .btn {
     background: rgba(255, 255, 255, 0.2);
