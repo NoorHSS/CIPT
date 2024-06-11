@@ -3,8 +3,6 @@ layout: default
 title: Features
 ---
 
-<a href="/"><button style="margin: 10px; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Homepage</button></a>
-
 # Features
 
 The CIPT Application includes the following features:
