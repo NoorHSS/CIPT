@@ -21,10 +21,17 @@
             color: #fff;
             padding: 10px 0;
             width: 100%;
-            text-align: right;
             z-index: 1000;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right {
+            display: flex;
             align-items: center;
         }
         .navbar a, .dropdown {
@@ -106,23 +113,12 @@
             margin: 20px auto;
             width: 100px;
         }
+
+        /* Google Translate Widget */
         .translate-widget {
-            margin-left: 20px;
+            margin-right: 20px;
             display: flex;
             align-items: center;
-        }
-        .translate-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            margin-right: 15px;
-        }
-        .translate-button:hover {
-            background-color: #0056b3;
         }
         .goog-te-banner-frame.skiptranslate {
             display: none !important;
@@ -151,41 +147,45 @@
             display: none;
         }
     </style>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'ar,en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
 </head>
 <body>
     <img src="/CIPT/logo.png" alt="CIPT Logo" class="logo">
     <div class="navbar">
-        <a href="/CIPT/"><i class="fas fa-home"></i> Home</a>
-        <div class="dropdown">
-            <a class="dropbtn"><i class="fas fa-book"></i> Contents</a>
-            <div class="dropdown-content">
-                <a href="/CIPT/docs/introduction.html">Introduction</a>
-                <a href="/CIPT/docs/installation.html">Installation</a>
-                <a href="/CIPT/docs/features.html">Features</a>
-                <a href="/CIPT/docs/using-the-application.html">Using the Application</a>
-                <a href="/CIPT/docs/faq.html">FAQ</a>
+        <div class="navbar-left">
+            <div class="translate-widget">
+                <div id="google_translate_element"></div>
             </div>
         </div>
-        <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
-        <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
-        <div id="google_translate_element" class="translate-widget"></div>
+        <div class="navbar-right">
+            <a href="/CIPT/"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <a class="dropbtn"><i class="fas fa-book"></i> Contents</a>
+                <div class="dropdown-content">
+                    <a href="/CIPT/docs/introduction.html">Introduction</a>
+                    <a href="/CIPT/docs/installation.html">Installation</a>
+                    <a href="/CIPT/docs/features.html">Features</a>
+                    <a href="/CIPT/docs/using-the-application.html">Using the Application</a>
+                    <a href="/CIPT/docs/faq.html">FAQ</a>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
+            <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
+        </div>
     </div>
     <div class="container">
         {{ content }}
     </div>
     <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} CIPT developed by Nawras with <span style="color: red;">&#10084;</span></p>
+        <p>&copy; {{ site.time | date: "%Y" }} CIPT developed by Nawras with <span style="color: red;">&hearts;</span></p>
     </footer>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
