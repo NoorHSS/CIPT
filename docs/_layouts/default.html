@@ -64,7 +64,6 @@
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
         }
         h1, h2, h3, h4, h5, h6 {
             color: #333;
@@ -98,9 +97,15 @@
             bottom: 0;
             width: 100%;
         }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
+    <img src="/CIPT/logo.png" alt="CIPT Logo" class="logo">
     <div class="navbar">
         <a href="/CIPT/">Home</a>
         <a href="javascript:history.back()">Back</a>
@@ -117,12 +122,10 @@
         </div>
     </div>
     <div class="container">
-        <div class="content">
-            {{ content }}
-        </div>
+        {{ content }}
     </div>
     <footer>
-        <p>&copy; CIPT developed by Nawras with <span style="color: red;">&hearts;</span></p> 2024
+        <p>&copy; {{ site.time | date: "%Y" }} CIPT developed by Nawras with <span style="color: red;">&hearts;</span></p>
     </footer>
 </body>
 </html>
