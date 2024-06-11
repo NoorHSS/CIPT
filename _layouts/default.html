@@ -160,14 +160,6 @@
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
-
-        function translateToArabic() {
-            var selectField = document.querySelector('select.goog-te-combo');
-            if (selectField) {
-                selectField.value = 'ar';
-                selectField.dispatchEvent(new Event('change'));
-            }
-        }
     </script>
 </head>
 <body>
@@ -187,8 +179,7 @@
         <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
         <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
         <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
-        <button class="translate-button" onclick="translateToArabic()">العربية</button>
-        <div id="google_translate_element" style="display:none;"></div>
+        <div id="google_translate_element" class="translate-widget"></div>
     </div>
     <div class="container">
         {{ content }}
