@@ -6,7 +6,7 @@ title: Introduction
 
 # Introduction
 
-The CIPT Application helps you manage your finances effectively. This guide will walk you through its features and how to use it.
+The CIPT Application helps you manage your finances effectively. This guide will walk you through its features and how to use it.222
 <p style="text-align: center;"><strong><span style="font-size: 22px;">werwerwerwerwer</span></strong></p>
 <ul>
     <li><strong>Bold Text</strong>: Highlight the text you want to make bold and click the Bold button (B).</li>
