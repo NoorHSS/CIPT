@@ -1,21 +1,32 @@
----
-layout: default
-title: Introduction
----
-
-
-# Introduction
-
-The CIPT Application helps you manage your finances effectively. This guide will walk you through its features and how to use it.
-
-<p style="text-align: center;"><strong><span style="font-size: 22px;">werwerwerwerwer</span></strong></p>
+<h3>How to Update on GitHub</h3>
+<ol>
+    <li>
+        <p><strong>Navigate ** the <code>about.html</code> file</strong> in your GitHub repository *** update *** content with the provided <code>about.html</code> code.</p>
+    </li>
+    <li>
+        <p><strong>Navigate to *** <code>assets/css/style.css</code> file</strong> in your ****** repository *** add the *** CSS rules ** the end of the file.</p>
+    </li>
+    <li>
+        <p><strong>Commit the changes</strong>.</p>
+    </li>
+</ol>
+<h3>Example on GitHub</h3>
+<p>** update the <code>about.html</code> file:</p>
 <ul>
-    <li style="color: rgb(209, 72, 65); line-height: 1.15;"><strong><span style="background-color: rgb(250, 197, 28);">Bold Text</span></strong>: Highlight the text *** want ** make bold and click the Bold button (B).</li>
-    <li style="line-height: 1.15;"><strong><span style="background-color: rgb(247, 218, 100);">******** **** Size</span></strong>: Highlight the text you **** to enlarge and ****** a ****** font size from *** dropdown menu.</li>
-    <li style="line-height: 1.15;"><strong><span style="background-color: rgb(247, 218, 100);">Highlight Text</span></strong>: Change *** background color of the selected text ** highlight it.</li>
-    <li style="line-height: 1.15;"><strong><span style="background-color: rgb(247, 218, 100);">Headings</span></strong>: ****** the text to headings (H1, H2, H3, etc.) to make them ****** and more prominent.</li>
-    <li style="line-height: 1.15;"><strong><span style="background-color: rgb(250, 197, 28);">Links</span></strong>: *** hyperlinks to text.</li>
-    <li style="line-height: 1.15;"><br></li>
+    <li>Go to **** ****** repository.</li>
+    <li>Navigate to <code>about.html</code>.</li>
+    <li>Click the pencil **** to **** the file.</li>
+    <li>Replace the existing content with *** updated <code>about.html</code> content ******** above.</li>
+    <li>Commit the ******* with a descriptive message.</li>
 </ul>
-<p><br></p>
+<p>To ****** the <code>assets/css/style.css</code> file:</p>
+<ul>
+    <li>Go to your GitHub repository.</li>
+    <li>******** to <code>assets/css/style.css</code>.</li>
+    <li>***** the pencil icon to edit the file.</li>
+    <li>****** to the *** of *** file *** add the provided CSS rules.</li>
+    <li>Commit the ******* **** a descriptive message.</li>
+</ul>
+<h3>Summary</h3>
+<p>By following ***** steps, the application logo will ** larger, and the ********* image will ** positioned correctly ** shown ** your screenshot. *** ***** ** page **** also **** a modern, organized look with social ***** links for both the application and the developer. ** you encounter *** issues or need ******* adjustments, feel **** to ask!</p>
 <div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Created with <a href="https://wordtohtml.net/">WordToHTML.net</a> trial.</div>
