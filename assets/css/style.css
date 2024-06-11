@@ -188,20 +188,34 @@ p {
     margin: 10px auto;
     color: #555;
 }
+
+
+
+
+
+
 .version-block {
     background: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 .version-block h2 {
     color: #333;
 }
 
-.version-block p {
-    color: #555;
+.version-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.version-details {
+    flex: 1;
+    font-size: 14px; /* Smaller font size for content */
 }
 
 .version-block ul {
@@ -211,14 +225,14 @@ p {
 
 .download-button {
     display: inline-block;
-    margin: 10px 0;
+    margin-left: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s;
 }
 
