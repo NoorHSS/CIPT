@@ -1,121 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/CIPT/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            text-align: right;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .navbar a, .dropdown {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            display: inline-block;
+            position: relative;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            text-decoration: underline;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content img {
+            max-width: 100%;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content li {
+            padding: 5px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/CIPT/logo.png" alt="CIPT Logo" class="logo">
+    <div class="navbar">
+        <a href="/CIPT/"><i class="fas fa-home"></i> Home</a>
+        <div class="dropdown">
+            <a class="dropbtn"><i class="fas fa-book"></i> Contents</a>
+            <div class="dropdown-content">
+                <a href="/CIPT/docs/introduction.html">Introduction</a>
+                <a href="/CIPT/docs/installation.html">Installation</a>
+                <a href="/CIPT/docs/features.html">Features</a>
+                <a href="/CIPT/docs/using-the-application.html">Using the Application</a>
+                <a href="/CIPT/docs/faq.html">FAQ</a>
+            </div>
+        </div>
+        <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
+        <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
+    </div>
+    <div class="container">
+        {{ content }}
+    </div>
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} CIPT developed by Nawras with <span style="color: red;">&hearts;</span></p>
+    </footer>
+</body>
+</html>
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #333;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.content img {
-    max-width: 100%;
-}
-
-.content {
-    margin-top: 20px;
-}
-
-.content ul {
-    list-style: none;
     padding: 0;
 }
 
-.content li {
-    padding: 5px 0;
+.about-page {
+    text-align: center;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    .about-page {
-        text-align: center;
-        padding: 20px;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .about-page {
-        text-align: center;
-    }
-    
-    .about-logo {
-        display: block;
-        margin: 20px auto;
-        width: 150px;
-    }
-    
-    .social-media, .developer-social-media {
-        margin: 20px 0;
-    }
-    
-    .social-media a, .developer-social-media a {
-        color: #333;
-        margin: 0 10px;
-        font-size: 2em;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    
-    .social-media a:hover, .developer-social-media a:hover {
-        color: #007bff;
-    }
-    
-    .developer-section {
-        margin: 40px 0;
-    }
-    
-    .developer-image {
-        display: block;
-        margin: 0 auto;
-        width: 150px;
-        border-radius: 50%;
-    }
-    
-    h1, h2 {
-        color: #333;
-    }
-    
-    p {
-        max-width: 800px;
-        margin: 10px auto;
-        color: #555;
-    }
-    
+.about-logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+.social-media, .developer-social-media {
+    margin: 20px 0;
+}
+
+.social-media a, .developer-social-media a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover, .developer-social-media a:hover {
+    color: #007bff;
+}
+
+.developer-section {
+    margin: 40px 0;
+}
+
+.developer-image {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    color: #555;
+}
