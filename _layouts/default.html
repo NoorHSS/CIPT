@@ -108,12 +108,65 @@
         }
         .translate-widget {
             margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .translate-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        .translate-button:hover {
+            background-color: #0056b3;
+        }
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0 !important;
+        }
+        .goog-te-gadget {
+            color: #fff;
+            font-size: 14px;
+        }
+        .goog-te-gadget-simple {
+            background-color: #333;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .goog-te-gadget-simple .goog-te-menu-value span {
+            color: #fff;
+        }
+        .goog-te-gadget-simple .goog-te-menu-value span:hover {
+            color: #007bff;
+        }
+        .goog-te-gadget img {
+            display: none;
         }
     </style>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'ar,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        function translateToArabic() {
+            var selectField = document.querySelector('select.goog-te-combo');
+            if (selectField) {
+                selectField.value = 'ar';
+                selectField.dispatchEvent(new Event('change'));
+            }
         }
     </script>
 </head>
@@ -134,7 +187,8 @@
         <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
         <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
         <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
-        <div id="google_translate_element" class="translate-widget"></div>
+        <button class="translate-button" onclick="translateToArabic()">العربية</button>
+        <div id="google_translate_element" style="display:none;"></div>
     </div>
     <div class="container">
         {{ content }}
