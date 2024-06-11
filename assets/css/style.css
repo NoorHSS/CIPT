@@ -123,21 +123,6 @@ footer {
     align-items: center;
 }
 
-.translate-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-right: 15px;
-}
-
-.translate-button:hover {
-    background-color: #0056b3;
-}
-
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 }
