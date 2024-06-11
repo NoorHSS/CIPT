@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/CIPT/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,12 +23,16 @@
             width: 100%;
             text-align: right;
             z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
         .navbar a, .dropdown {
             color: #fff;
             text-decoration: none;
             padding: 0 15px;
             display: inline-block;
+            position: relative;
         }
         .navbar a:hover, .dropdown:hover .dropbtn {
             text-decoration: underline;
@@ -39,7 +44,6 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            right: 0;
             background-color: #333;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -107,11 +111,9 @@
 <body>
     <img src="/CIPT/logo.png" alt="CIPT Logo" class="logo">
     <div class="navbar">
-        <a href="/CIPT/">Home</a>
-        <a href="javascript:history.back()">Back</a>
-        <a href="https://www.youtube.com/your-channel" target="_blank">YouTube Channel</a>
+        <a href="/CIPT/"><i class="fas fa-home"></i> Home</a>
         <div class="dropdown">
-            <a class="dropbtn">More</a>
+            <a class="dropbtn"><i class="fas fa-book"></i> Contents</a>
             <div class="dropdown-content">
                 <a href="/CIPT/docs/introduction.html">Introduction</a>
                 <a href="/CIPT/docs/installation.html">Installation</a>
@@ -120,6 +122,9 @@
                 <a href="/CIPT/docs/faq.html">FAQ</a>
             </div>
         </div>
+        <a href="https://www.youtube.com/your-channel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="/CIPT/download.html"><i class="fas fa-download"></i> Download CIPT</a>
+        <a href="/CIPT/about.html"><i class="fas fa-info-circle"></i> About CIPT</a>
     </div>
     <div class="container">
         {{ content }}
