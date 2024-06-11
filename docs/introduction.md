@@ -8,3 +8,11 @@ title: Introduction
 
 The CIPT Application helps you manage your finances effectively. This guide will walk you through its features and how to use it.
 
+<p style="text-align: center;"><strong><span style="font-size: 22px;">werwerwerwerwer</span></strong></p>
+<ul>
+    <li><strong>Bold Text</strong>: Highlight the text you want to make bold and click the Bold button (B).</li>
+    <li><strong>Increase Font Size</strong>: Highlight the text you want to enlarge and select a larger font size from the dropdown menu.</li>
+    <li><strong>Highlight Text</strong>: Change the background color of the selected text to highlight it.</li>
+    <li><strong>Headings</strong>: Change the text to headings (H1, H2, H3, etc.) to make them larger and more prominent.</li>
+    <li><strong>Links</strong>: Add hyperlinks to text.</li>
+</ul>
