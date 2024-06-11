@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
-
 .navbar {
     position: sticky;
     top: 0;
@@ -59,6 +60,11 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.full-width {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -255,8 +261,6 @@ p {
 
 
 
-
-/* Styles for the introduction container */
 .main-title {
     text-align: center;
     font-size: 36px;
@@ -275,10 +279,11 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    padding: 0 20px;
 }
 
 .block {
-    flex: 1 1 calc(50% - 40px);
+    flex: 1 1 calc(30% - 40px);
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -315,6 +320,7 @@ p {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     text-decoration: none;
+    font-size: 14px;
     transition: background 0.3s, border 0.3s;
 }
 
@@ -341,4 +347,3 @@ p {
 .block.orange .btn:hover {
     background: #e55300;
     border-color: #e55300;
-}
