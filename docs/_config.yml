@@ -1,9 +1,21 @@
-baseurl: "/CIPT"
-url: "https://nawrashaswia.github.io"
+# Site settings
+title: CIPT Application
+description: >- 
+  Comprehensive Investment Planning Tool - Manage your finances effectively.
+baseurl: "/CIPT" 
+url: "https://nawrashaswia.github.io" 
 
-theme: jekyll-theme-slate
-# Custom CSS
-markdown: kramdown
-kramdown:
-  input: GFM 
-
+# Navbar links
+nav_links:
+  - name: Home
+    link: "/"
+  - name: Contents
+    link: "/docs/introduction.html"
+  - name: YouTube
+    link: "https://www.youtube.com/your-channel"
+  - name: Download CIPT
+    link: "/download.html"
+  - name: About CIPT
+    link: "/about.html"
+  - name: Contact Us
+    link: "/contact.html"
