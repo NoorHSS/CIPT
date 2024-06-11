@@ -9,4 +9,3 @@ title: Introduction
 
 The CIPT Application helps you manage your finances effectively. This guide will walk you through its features and how to use it.
 
-![Introduction Image](path/to/your/image.png)
