@@ -1,0 +1,21 @@
+navbar:
+  youtube: "يوتيوب"
+  contact: "اتصل بي"
+  about: "عن CIPT"
+  contents: "المحتويات"
+  introduction: "مقدمة"
+  installation: "تثبيت"
+  features: "الميزات"
+  using_the_application: "استخدام التطبيق"
+  faq: "الأسئلة الشائعة"
+  download_center: "مركز التنزيل"
+  home: "الرئيسية"
+  search: "بحث"
+  arabic: "العربية"
+  english: "الإنجليزية"
+search:
+  placeholder: "ابحث في CIPT..."
+  button: "بحث"
+  no_results: "لم يتم العثور على نتائج"
+footer:
+  developed_by: "CIPT تم تطويرها بواسطة نوّاس مع"

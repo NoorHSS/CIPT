@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    {% seo %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="message-container">
+            <div class="message-bubble">
+                <p id="message-text">Hint || Manage your capital well and don’t be greedy</p>
+            </div>
+        </div>
+        {% if page.show_logo != false %}
+        <div class="logo-container">
+            <p><a href="{{ site.url }}{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/logo.png" alt="CIPT" class="logo"></a></p>
+        </div>
+        {% endif %}
+        {% include navbar.html %}
+        <div class="search-container" id="search-container">
+            <input type="text" id="search-input" placeholder="Search CIPT..." class="search-bar">
+            <button id="search-button" class="search-button">Search</button>
+            <div id="search-results" class="search-results-dropdown"></div>
+        </div>
+        <div class="container {% if page.lined_paper %}lined-paper{% endif %}">
+            <div class="content {% if page.lined_paper %}lined-paper-content{% endif %}">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+    
+    <!-- Include external scripts -->
+    {% include google-translate-script.html %}
+    {% include search-script.html %}
+    {% include faq-toggle-script.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/message-script.js"></script>
+</body>
+</html>

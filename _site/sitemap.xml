@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/CIPT/docs/Videos/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/download/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/faq/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/features/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/installation/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/introduction/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CIPT/docs/using-the-application/</loc>
+</url>
+</urlset>

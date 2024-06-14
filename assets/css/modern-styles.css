@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    
+    line-height: 1.1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 2cqb solid #e7d5a7;
+    padding-bottom: 0.2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #7a6b43;
+    padding-bottom: 0.4em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+ul, ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-size: 1.0em;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+li {
+    margin-bottom: 0.7em;
+    font-size: 1.0em;
+}
+
+a {
+    color: #0040ca;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1900ff;
+    text-decoration: underline;
+}
+
+.code {
+    background: #f8fde3;
+    padding: 0.09em 0.1em;
+    border-radius: 2px;
+    font-family: 'Quicksand', Courier, monospace;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 1em;
+    background: #f9f9f9;
+    border-left: 5px solid #ff6347;
+    color: #666;
+    font-style: italic;
+}
+
+.callout {
+    background: #fffcf7;
+    border-left: 5px solid #ff6347;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+}
+
+.callout p {
+    margin: 0;
+}
+
+button {
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e55330;
+}
+/* FAQ section */
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #e9d8c8;
+    color: #020202;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #d8c6b6;
+}
+
+.faq-question:after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active:after {
+    content: '\25B2'; /* Up arrow */
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.video-item {
+    flex: 1 1  calc(50% - 40px); /* Two columns */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
