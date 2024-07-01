@@ -1,52 +1,83 @@
 [
-    {
-        "title": "About CIPT",
-        "url": "/CIPT/about/",
-        "content": "About CIPT CIPT (Comprehensive Investment Planning Tool) is a free application designed to help individuals manage their finances effectively. With CIPT, users can track their investments, plan their financial goals, and gain insights into their financial health. Whether you are a seasoned investor or just starting out, CIPT provides the..."
-    },
+   
     {
         "title": "Contact Me",
-        "url": "/CIPT/contact/",
+        "url": "/pip/en/contact/",
         "content": "Contact Me Name Email Subject Message Send Message"
     },
     {
-        "title": "Download CIPT Application",
-        "url": "/CIPT/download/",
-        "content": "Download CIPT Application Notice All versions of the Application are available here and are completely free. You are welcome to download, use, and share the application as you wish. However, please note that selling or cracking the software is strictly prohibited. We appreciate your support and hope you find the..."
+        "title": "Download PiP Application",
+        "url": "/pip/en/download/",
+        "content": "Download PiP Application Notice All versions of the Application are available here and are completely free. You are welcome to download, use, and share the application as you wish. However, please note that selling or cracking the software is strictly prohibited. We appreciate your support and hope you find the..."
+    },
+    {
+        "title": "PiP Videos",
+        "url": "/pip/en/videos/",
+        "content": "PiP video will show alll the user guide in video contents, like the application intallation, step by step creating plan ....."
     },
     {
         "title": "FAQ",
-        "url": "/CIPT/docs/faq/",
-        "content": "FAQ The common questions asked Me by CIPT users 1. What is CIPT Chero Increment Profits Tracker? CIPT Chero is a comprehensive tool designed for traders and scalpers to manage and track their daily trading activities, including profits and losses, through detailed financial plans and reports. 2. Who should use..."
+        "url": "/pip/en/docs/faq/",
+        "content": "FAQ The common questions asked Me by PiP users 1. What is PiP Increment Profits Tracker? PiP  is a comprehensive tool designed for traders and scalpers to manage and track their daily trading activities, including profits and losses, through detailed financial plans and reports. 2. Who should use..."
     },
     {
         "title": "Features",
-        "url": "/CIPT/docs/features/",
-        "content": "CIPT Features CIPT Chero incremental profits tracker has a lot of functions, here are some of them: Quick View Dashboard: Get a snapshot of your financial status, including total profits and losses, right when you open the app. Progress Tracking: See how close you are to achieving your financial goals..."
-    },
-    {
-        "title": "CIPT Application",
-        "url": "/CIPT/",
-        "content": "Welcome To CIPT CIPT (Comprehensive Investment Planning Tool) is a free application designed to help individuals manage their finances effectively. With CIPT, users can track their investments, plan their financial goals, and gain insights into their financial health. CIPT is free forever. Introduction Learn about the basics of CIPT application...."
-    },
-    {
-        "title": "User Guide",
-        "url": "/CIPT/docs/",
-        "content": "CIPT Application User Guide Welcome to the CIPT Application User Guide. Below are the sections to help you get started. Introduction Installation Features Using the Application FAQ You can also find helpful video tutorials on our YouTube channel."
+        "url": "/pip/en/docs/features/",
+        "content": "PiP Features PiP incremental profits tracker has a lot of functions, here are some of them: Quick View Dashboard: Get a snapshot of your financial status, including total profits and losses, right when you open the app. Progress Tracking: See how close you are to achieving your financial goals..."
     },
     {
         "title": "Installation",
-        "url": "/CIPT/docs/installation/",
-        "content": "Installation Step-by-Step Installation Guide Follow these steps to install CIPT Chero Increment Profits Tracker on your Windows computer: Download the Installer: Visit the CIPT Chero official website and download the CIPT_Installer.exe file. Run the Installer: Locate the downloaded CIPT_Installer.exe file on your computer. Double-click the file to run the installer...."
+        "url": "/pip/en/docs/installation/",
+        "content": "Installation Step-by-Step Installation Guide Follow these steps to install PiP Increment Profits Tracker on your Windows computer: Download the Installer: Visit the PiP official website and download the pip_Installer.exe file. Run the Installer: Locate the downloaded pip_Installer.exe file on your computer. Double-click the file to run the installer...."
     },
     {
         "title": "Introduction",
-        "url": "/CIPT/docs/introduction/",
-        "content": "Introduction Welcome to CIPT Chero Increment Profits Tracker CIPT Chero is a powerful tool designed for traders and scalpers who want to effectively manage and track their daily trading progress. Whether you're actively trading in the Forex market, cryptocurrencies, or stocks, CIPT Chero is here to help you achieve your..."
+        "url": "/pip/en/docs/introduction/",
+        "content": "Introduction Welcome to PiP Increment Profits Tracker PiP is a powerful tool designed for traders and scalpers who want to effectively manage and track their daily trading progress. Whether you're actively trading in the Forex market, cryptocurrencies, or stocks, PiP is here to help you achieve your..."
     },
     {
         "title": "Using the Application",
-        "url": "/CIPT/docs/using-the-application/",
-        "content": "Using the Application This guide will help you navigate the CIPT 1. Login Page When you open CIPT Chero, you will be greeted by the login screen. Enter your password to access the application. If you forget your password, click on 'Forgot Password?' for assistance. 2. Dashboard Overview After logging..."
+        "url": "/pip/en/docs/using-the-application/",
+        "content": "Using the Application This guide will help you navigate the PiP 1. Login Page When you open PiP, you will be greeted by the login screen. Enter your password to access the application. If you forget your password, click on 'Forgot Password?' for assistance. 2. Dashboard Overview After logging..."
+    },
+    {
+        "title": "اتصل بي",
+        "url": "/pip/ar/contact/",
+        "content": "اتصل بي الاسم البريد الإلكتروني الموضوع الرسالة أرسل رسالة"
+    },
+    {
+        "title": "تحميل تطبيق بيب",
+        "url": "/pip/ar/download/",
+        "content": "تحميل تطبيق بيب ملاحظة جميع إصدارات التطبيق متاحة هنا وهي مجانية تمامًا. يمكنك تنزيل، استخدام، ومشاركة التطبيق كما تشاء. ومع ذلك، يرجى ملاحظة أن بيع أو كسر البرنامج محظور تمامًا. نحن نقدر دعمك ونتمنى لك..."
+    },
+    {
+        "title": "الأسئلة الشائعة",
+        "url": "/pip/ar/docs/faq/",
+        "content": "الأسئلة الشائعة الأسئلة الشائعة التي يطرحها مستخدمو بيب 1. ما هو بيب و لتتبع الأرباح المتزايدة؟ بيب  هو أداة شاملة مصممة للمتداولين والمضاربين لإدارة وتتبع أنشطتهم التجارية اليومية، بما في ذلك الأرباح والخسائر، من خلال خطط وتقارير مالية مفصلة. 2. من يجب أن يستخدم..."
+    },
+    {
+        "title": "ميزات",
+        "url": "/pip/ar/docs/features/",
+        "content": "ميزات بيب يتمتع متتبع الأرباح المتزايدة بيب  بالعديد من الوظائف، وإليك بعض منها: عرض سريع للوحة القيادة: احصل على لقطة لحالتك المالية، بما في ذلك إجمالي الأرباح والخسائر، فور فتح التطبيق. تتبع التقدم: شاهد مدى قربك من تحقيق أهدافك المالية..."
+    },
+    {
+        "title": "التثبيت",
+        "url": "/pip/ar/docs/installation/",
+        "content": "التثبيت دليل التثبيت خطوة بخطوة اتبع هذه الخطوات لتثبيت متتبع الأرباح المتزايدة بيب  على جهاز الكمبيوتر الخاص بك بنظام Windows: قم بتنزيل المثبت: قم بزيارة الموقع الرسمي لـ بيب و وقم بتنزيل ملف PiP_Installer.exe. تشغيل المثبت: حدد موقع ملف pip_Installer.exe الذي تم تنزيله على جهاز الكمبيوتر الخاص بك. انقر نقرًا مزدوجًا فوق الملف لتشغيل المثبت..."
+    },
+    {
+        "title": "مقدمة",
+        "url": "/pip/ar/docs/introduction/",
+        "content": "مقدمة مرحبًا بكم في بيب و لتتبع الأرباح المتزايدة بيب شيرو هو أداة قوية مصممة للمتداولين والمضاربين الذين يرغبون في إدارة وتتبع تقدمهم التجاري اليومي بفعالية. سواء كنت تتداول بنشاط في سوق الفوركس أو العملات الرقمية أو الأسهم، فإن بيب  هنا لمساعدتك في تحقيق أهدافك..."
+    },
+    {
+        "title": "استخدام التطبيق",
+        "url": "/pip/ar/docs/using-the-application/",
+        "content": "استخدام التطبيق سيساعدك هذا الدليل في التنقل في بيب 1. صفحة تسجيل الدخول عند فتح بيب  سترحب بك شاشة تسجيل الدخول. أدخل كلمة المرور الخاصة بك للوصول إلى التطبيق. إذا نسيت كلمة المرور، انقر فوق 'هل نسيت كلمة المرور؟' للحصول على المساعدة. 2. نظرة عامة على لوحة القيادة بعد تسجيل الدخول..."
+    },
+    {
+        "title": "بيب يوتيوب فيديو",
+        "url": "/pip/ar/videos/",
+        "content": " يوتيوب هو دليل المستخدم على شكل مقاطع فيديو على يوتيوب كدليل الاستخدام وتنصيب البرنامج خطوة بخطوة ....."
     }
 ]

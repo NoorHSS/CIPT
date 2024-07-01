@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&display=swap');
+
+/* Arabic Specific Styles for Text Only */
+html[lang="ar"], body[lang="ar"], html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, html[lang="ar"] h5, html[lang="ar"] h6, 
+html[lang="ar"] p, html[lang="ar"] ul, html[lang="ar"] ol, html[lang="ar"] li, 
+html[lang="ar"] .code, html[lang="ar"] .faq-question, html[lang="ar"] .faq-answer, 
+html[lang="ar"] .video-item p {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
 /* General styles */
 body {
     font-family: 'Quicksand', sans-serif;
-    
     line-height: 1.1;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #fcfcfc;
 }
 
 .container {
@@ -31,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.5em;
-    border-bottom: 2cqb solid #e7d5a7;
+    border-bottom: 2px solid #e7d5a7;
     padding-bottom: 0.2em;
     text-align: center;
 }
@@ -63,8 +75,8 @@ ul, ol {
 }
 
 li {
-    margin-bottom: 0.7em;
-    font-size: 1.0em;
+    margin-bottom: 0.9em;
+    font-size: 1.2em;
 }
 
 a {
@@ -106,7 +118,7 @@ blockquote {
     margin: 0;
 }
 
-button {
+.button-modern {
     background: #ff6347;
     color: #fff;
     border: none;
@@ -116,9 +128,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+.button-modern:hover {
     background: #e55330;
 }
+
 /* FAQ section */
 .faq-item {
     margin-bottom: 10px;
@@ -137,6 +150,7 @@ button:hover {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    font-weight: 700;
 }
 
 .faq-question:hover {
@@ -173,7 +187,7 @@ button:hover {
 }
 
 .video-item {
-    flex: 1 1  calc(50% - 40px); /* Two columns */
+    flex: 1 1 calc(50% - 40px);
     margin-bottom: 20px;
     text-align: center;
 }

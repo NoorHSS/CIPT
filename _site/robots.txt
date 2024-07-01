@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/CIPT/sitemap.xml
+Sitemap: http://localhost:4000/pip/sitemap.xml
