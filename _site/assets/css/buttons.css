@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;600&display=swap');
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Arabic Specific Styles */
+html[lang="ar"], body[lang="ar"] {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Sidebar Container */
+.buttons-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Sidebar Language Buttons Container */
+.language-buttons-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 1001;
+}
+
+/* Language Button Style */
+.language-button {
+    width: 62px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    padding: 0 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.language-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.language-button i {
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+.language-button .button-label {
+    font-size: 12px;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Apply Arabic font to language buttons when language is Arabic */
+html[lang="ar"] .language-button {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[lang="ar"] .language-button .button-label {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Button Style */
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0 16px;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon and Label Styling */
+.button i {
+    font-size: 27px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-left: 8px;
+    position: absolute;
+    right: 10px;
+}
+
+.button-label {
+    font-size: 13px;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Apply Arabic font to buttons when language is Arabic */
+html[lang="ar"] .button-label {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Sub-button Style */
+.sub-button {
+    width: 127px;
+    height: 29px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding: 0 14px;
+    position: relative;
+}
+
+.sub-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sub-button i {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-left: 8px;
+    position: absolute;
+    right: 10px;
+}
+
+.sub-button-label {
+    font-size: 13px;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Apply Arabic font to sub-buttons when language is Arabic */
+html[lang="ar"] .sub-button-label {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Sub-buttons Container */
+.sub-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 0;
+    right: -160px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+.sub-buttons.expanded {
+    display: flex;
+}
+
+/* Adjustments for Specific Elements */
+.button.has-sub::after {
+    content: 'chevron_right';
+    font-family: 'Material Icons';
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button.has-sub.expanded::after {
+    transform: rotate(90deg);
+}

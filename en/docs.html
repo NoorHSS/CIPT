@@ -1,0 +1,65 @@
+---
+layout: buttons-only
+title: "Documentation"
+description: "Explore the documentation for PiP Planner, including guides, features, and tutorials."
+lang: en
+permalink: /en/docs/
+keywords: "PiP documentation, PiP Planner, guides, features, tutorials"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    {% seo %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">{{ page.title }}</h1>
+        <p style="text-align: center;">{{ page.description }}</p>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-info-circle"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/introduction/">Introduction</a></h3>
+                <p>Understand PiP concept, how it works, and main ideas.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-download"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/installation/">Installation</a></h3>
+                <p>Step-by-step installation guide for PiP Planner on Windows.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-question-circle"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/faq/">FAQ</a></h3>
+                <p>Frequently asked questions about PiP Planner and trading.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cogs"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/features/">PiP Features</a></h3>
+                <p>Explore PiP Planner's features for managing and tracking trading.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-book-open"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/using-the-application/">Using PiP</a></h3>
+                <p>A comprehensive guide to using PiP Planner effectively.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-video"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/videos/">PiP Videos</a></h3>
+                <p>Watch CIPT tutorial videos covering usage and more.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-download"></i>
+                <h3><a href="{{ site.baseurl }}/{{ page.lang }}/docs/download-pip-application/">Download PiP</a></h3>
+                <p>Download the latest versions of PiP application for free.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

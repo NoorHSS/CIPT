@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=cairo:wght@200;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Arabic Specific Styles */
+html[lang="ar"], body[lang="ar"], html[lang="ar"] body, 
+html[lang="ar"] .sidebar, html[lang="ar"] .sidebar .message-item {
+    font-family: 'cairo', sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide the sidebar by default */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px; /* Adjust padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: left 0.3s ease; /* Adjust transition property */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.sidebar .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #777;
+    width: 100%;
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.sidebar .header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar .header .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start */
+}
+
+.sidebar .header .info .name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.sidebar .header .info .status {
+    font-size: 14px;
+    color: #628400; /* Green for online status */
+}
+
+.sidebar .message-container {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 20px; /* Add padding to separate from header */
+}
+
+.sidebar .message-container #message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar .message-item {
+    background-color: #dcf8c6;
+    padding: 8px;
+    border-radius: 10px;
+    color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+    max-width: calc(97% - 20px);
+    word-wrap: break-word; /* Allow long words to break and fit within the message */
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+html[lang="ar"] .sidebar .message-item {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.sidebar .message-item::before {
+    content: "";
+    position: absolute;
+    top: 3;
+    right: -10px; /* Adjust this to position the tail correctly */
+    width: 0;
+    height: -7px;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: #dcf8c6 transparent transparent transparent;
+    z-index: 1;
+}
+
+.sidebar .message-item .category-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.sidebar .message-item .category {
+    font-weight: bold;
+    font-size: 14px;
+    color: #3d3d3d; /* Dark color for category */
+    margin-right: 5px;
+}
+
+.sidebar .message-item .text {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sidebar .message-item .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar .message-item .material-icons {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Material Icons Styling */
+.icon-welcome {
+    color: #d40303 !important;
+    font-size: 24px !important;
+}
+
+.icon-hint {
+    color: #ffeb3b !important;
+    font-size: 24px !important;
+}
+
+.icon-warning {
+    color: #ff5722 !important;
+    font-size: 24px !important;
+}
+
+.icon-congrats {
+    color: #d10e59 !important;
+    font-size: 24px !important; 
+}
+
+.icon-news {
+    color: #084b5f !important;
+    font-size: 24px !important;
+}
+
+.read-icon {
+    color: #34b7f1 !important;
+    font-size: 18px !important; 
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.sidebar .sidebar-toggle {
+    position: fixed; /* Make the button fixed */
+    top: 10px;
+    left: 260px; /* Adjust left to show outside the sidebar */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1001;
+    transition: left 0.3s ease; /* Add transition for smooth movement */
+}
+
+.sidebar.open .sidebar-toggle {
+    left: 260px; /* Show outside the sidebar when open */
+}
+
+.sidebar.closed .sidebar-toggle {
+    left: 10px; /* Show inside the sidebar when closed */
+}
+
+.sidebar.open {
+    left: 0; /* Slide sidebar into view */
+}
+
+.sidebar.closed {
+    left: -250px; /* Hide the sidebar */
+}
+
+.main-content {
+    transition: margin-left 0.3s ease;
+    margin-left: 0; /* Default state */
+}
+
+.main-content.shifted {
+    margin-left: 250px; /* Adjust main content when sidebar is shown */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .main-content.shifted {
+        margin-left: 250px;
+    }
+}
