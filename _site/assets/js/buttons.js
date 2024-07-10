@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
+<<<<<<< HEAD
+=======
+    // Constants and Variables
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     const mainButtons = document.querySelectorAll('.main-button');
     const subButtonsContainers = document.querySelectorAll('.sub-buttons');
     const languageButtons = document.querySelectorAll('.language-button');
     const storedLanguage = localStorage.getItem('language') || document.documentElement.lang;
 
+<<<<<<< HEAD
+=======
+    // Functions
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     function setButtonLabels(language) {
         mainButtons.forEach(button => {
             const enLabel = button.getAttribute('data-en-label');
@@ -15,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 labelElement.textContent = enLabel;
             }
         });
+<<<<<<< HEAD
 
         const subButtons = document.querySelectorAll('.sub-button');
         subButtons.forEach(button => {
@@ -27,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 labelElement.textContent = enLabel;
             }
         });
+=======
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     }
 
     function setLanguage(language) {
@@ -55,8 +66,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+<<<<<<< HEAD
     setLanguage(storedLanguage);
 
+=======
+    // Initial Setup
+    setLanguage(storedLanguage);
+
+    // Event Listeners
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     mainButtons.forEach(button => {
         if (button.nextElementSibling && button.nextElementSibling.classList.contains('sub-buttons')) {
             button.classList.add('has-sub');

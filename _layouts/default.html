@@ -74,9 +74,15 @@
             display: none !important;
         }
     </style>
+<<<<<<< HEAD
     <div id="cookie-consent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #f8f9fa; padding: 10px; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); text-align: center; z-index: 1001;">
         <p>This site uses cookies to enhance your experience. By using this site, you accept our use of cookies.</p>
         <button onclick="acceptCookies()" style="background-color: #333; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">Accept</button>
+=======
+    <div id="cookie-consent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #f8f9fa; padding: 10px; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); text-align: center;">
+        <p>This site uses cookies to enhance your experience. By using this site, you accept our use of cookies.</p>
+        <button onclick="acceptCookies()" style="background-color: #007bff; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer;">Accept</button>
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     </div>
     
 </head>
@@ -101,11 +107,19 @@
             {% endif %}
             <span class="loading-profit positive">$300.00</span>
         </div>
+<<<<<<< HEAD
         <div class="ready-message" data-en-text="Are you ready to create your Investment plan?" data-ar-text="هل أنت مستعد لإنشاء خطتك الإستثمارية">
             {% if page.lang == 'ar' %}
                 هل أنت مستعد لإنشاء خطتك الإستثمارية ؟
             {% else %}
                 Are you ready to create your Investment plan?
+=======
+        <div class="ready-message" data-en-text="Are you ready to create your plan?" data-ar-text="هل أنت مستعد لإنشاء خطتك؟">
+            {% if page.lang == 'ar' %}
+                هل أنت مستعد لإنشاء خطتك؟
+            {% else %}
+                Are you ready to create your plan?
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
             {% endif %}
         </div>
     </div>
@@ -191,6 +205,11 @@
     <script src="{{ '/assets/js/cookies.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/footer.js' | relative_url }}"></script>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.loading-screen').classList.add('visible');

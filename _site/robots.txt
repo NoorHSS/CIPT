@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Sitemap: http://localhost:4000/docs/sitemap.xml
+=======
+Sitemap: http://localhost:4000/pip/sitemap.xml
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619

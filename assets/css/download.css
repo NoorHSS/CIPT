@@ -20,7 +20,10 @@ html[lang="ar"] .version-details ul, html[lang="ar"] .version-details ul li {
     font-family: 'Cairo', sans-serif;
     direction: rtl;
     text-align: right;
+<<<<<<< HEAD
     font-weight: 600;
+=======
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
 }
 
 /* General styles */
@@ -40,6 +43,7 @@ h1 {
     color: #333;
 }
 
+<<<<<<< HEAD
 .app-details {
     margin-bottom: 20px;
 }
@@ -80,6 +84,8 @@ h1 {
     color: #333;
 }
 
+=======
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
 .notice {
     background-color: #ffefc3;
     padding: 15px;
@@ -87,12 +93,20 @@ h1 {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .notice h2 {
+=======
+.notice h3 {
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     margin-top: 0;
     color: #333;
 }
 
+<<<<<<< HEAD
 .notice p {
+=======
+.notice h5 {
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     margin: 10px 0 0;
     color: #666;
 }
@@ -154,7 +168,10 @@ html[lang="ar"] .version-details ul {
 .version-details ul li {
     list-style-type: disc;
     color: #555;
+<<<<<<< HEAD
     font-weight: 600;
+=======
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
 }
 
 .download-button {
@@ -167,11 +184,18 @@ html[lang="ar"] .version-details ul {
     text-decoration: none;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+<<<<<<< HEAD
     font-weight: 600;
 }
 
 .download-button i {
     margin-left: 10px;
+=======
+}
+
+.download-button i {
+    margin-right: 10px;
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
 }
 
 .download-button:hover {
@@ -189,10 +213,13 @@ html[lang="ar"] .version-details ul {
         padding: 15px;
     }
 
+<<<<<<< HEAD
     .details-container {
         grid-template-columns: 1fr;
     }
 
+=======
+>>>>>>> cf2f73f0fa4070dd33910f4f17ebf9046f3d8619
     .version-content {
         flex-direction: column;
     }
